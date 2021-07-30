@@ -66,4 +66,4 @@ app.post('/product',(req,res)=>{
 app.get('/',(req,res)=>{
     res.send('Hi');
 })
-app.listen(5000);
+app.listen(process.env.PORT||5000);
